@@ -1,0 +1,310 @@
+
+nav {
+  position: fixed; /* This function keeps the nav-abar fixed as you scroll down or navigate between pages*/
+  top: 0;
+  width: 100%;
+  float: clear; 
+  clear: both;
+}
+nav ul {
+  list-style-type: none;  /* Removes the bullets points from the list*/
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: green;
+  width: 100%;
+  float: right;
+}
+nav li {
+  float: left;
+}
+
+nav a {
+  display: block; /* The list elements to be displayed on the same line */
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;  /* Removes the underlines*/
+}
+
+/* This only works when you move the move over the list items*/
+nav li:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+body {
+  background-color: white;
+}
+
+html,body,h1,h2,h3,h4,h5 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3 {
+  color: green;
+  text-align: center;
+}
+
+/* Main Body (The main body starts after the top image of every page)*/
+.mainBody {
+  line-height: 2;
+  font-size: 16px;
+  margin: 50px 130px;
+}
+
+/* Footer */
+#footer {
+  background-color: green;
+  font-family: cursive;
+  color: white;
+}
+
+/* Top Images (Top Images on every page) */
+
+.topImageMessage {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+  color: white;
+ 
+}
+
+.topImage {
+  height: 500px;
+  width: 100%;
+}
+.homeTopImage {
+  height: 700px;
+  width: 100%;
+}
+
+
+.rightFloatImg { /* Function for Pollution page*/
+  float: right; /* The images float to the right */
+  margin: 10px;
+}
+
+
+/*This part styles rows with 3 columns */
+.column {
+  float: left;
+  width: 33.33%; /* Divides the columns equally 100%/3*/
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: '';
+  clear: both;
+  display: table;
+  margin: 50px 0px;
+}
+
+/*This part styles rows with 2 columns */
+.columnOne {
+  float: left;
+  width: 50%;  /* Two equal columns 100%/2*/
+  padding: 20px 50px;
+  box-sizing: border-box;
+}
+
+/* Clearfix (clear floats) */
+.rowOne::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+/* Pollution page */
+.pollutionLink {
+  text-decoration: none;
+  color: royalblue;
+}
+.pollutionLink:hover {
+  color: tomato;
+}
+
+/* Benefits page */
+.benefitsSession li {
+  font-weight: bold;
+}
+
+/* About us page */
+
+.aboutUsBtn{
+  height: 40px;
+  width: auto;
+  background-color: silver; 
+  color: black;
+  font-size: 13px;
+  font-weight: bolder;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.aboutUsBtn2{
+  height: 60px;
+  width: 94%;
+  background-color: silver; 
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 10px;
+  border-color: black;
+}
+
+.aboutUsSession2{
+  margin-top: 100px;
+  background-color: green;
+  color: white;
+}
+
+/* Blog page */
+
+.blog {
+  margin: 0px 70px;
+}
+/* This function hides a part of the blogs and a javascript function 
+ is used to reveal it when the user clicks on it*/
+#hiddenPart1,#hiddenPart2,#hiddenPart3,
+#hiddenPart4,#hiddenPart5,#hiddenPart6,
+#hiddenPart7 {
+  display: none; /* Hidden and does not take up any space*/
+}
+.blogButton { 
+  width: 150px;
+  height: 30px;
+  background-color: green;
+  color: white;
+  border-color: black;
+  border-radius: 25px;
+}
+.blogImg {
+  height: 400px;
+  width: 800px;
+}
+
+.blogInfo .author {
+  font-weight: 1000;
+}
+
+.blogInfo .date {
+  font-style: oblique;
+  color: red;
+}
+
+#goUp{
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   font-size: 40px;
+}
+.fa-arrow-alt-circle-up {
+ color: green;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid green;
+}
+
+tr:hover {
+  background-color: honeydew;
+}
+
+/* Contact Us Page*/
+
+#getInTouchBtn {
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 25px;
+  border: green;
+}
+#getInTouchBtn:hover {
+  border: 2px solid greenyellow;
+}
+
+#formContainer {
+  display: none;
+}
+
+#formContainer {
+  border-radius: 25px;
+  background-color: whitesmoke;
+  padding: 25px;
+  margin: 30px 0px;
+}
+
+input[type='text'],
+[type='number'],
+[type='email'],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 0.2px solid green;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+input[type='button'],
+[type='submit'] {
+  color: white;
+  background-color: green;
+  border: green;
+  width: 100px;
+  height: 30px;
+  border-radius: 25px;
+}
+input[type='button']:hover,
+[type='submit']:hover {
+  border: 2px solid greenyellow;
+}
+
+input[type='submit'] {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 991px) {
+  .column {
+    width: 100%; 
+  }
+  .mainBody {
+    margin-left: 70px;
+    margin-right:70px;
+  }
+  .columnOne {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .column {
+    width: 100%; 
+  }
+  .mainBody {
+    margin-left: 50px;
+    margin-right:50px;
+  }
+  .columnOne {
+    width: 100%;
+  }
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <!-- Link to JavaScript file -->
+    <script src="../js/main.js"></script>
+
+    <!-- Link to Icon (fontawesome) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../../index.html">Solar Energy</a></li>
+        <li>
+          <a href="cleanEnvironment.html">Clean Environment</a>
+        </li>
+        <li><a href="benefits.html">Benefits</a></li>
+        <li>
+          <a href="pollutionEnvironmentalDiseases.html">Pollution</a>
+        </li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html" style="color: red;background-color: black;">Contact Us</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+      </ul>
+    </nav>
+
+    <div class="contact_map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.2531389455903!2d-89.23024619999998!3d48.4516724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d5923dbfe697737%3A0xc9d925c9bc9573fa!2s116+Bruce+St%2C+Thunder+Bay%2C+ON+P7A+5W6!5e0!3m2!1sen!2sca!4v1424272264157"
+        width="100%"
+        height="400"
+        frameborder="0"
+        style="border:0"
+      ></iframe>
+    </div>
+
+    <div id="contactUs" class="mainBody">
+      <div id="contactUsTop">
+        <h1>Request a call back</h1>
+        <p>
+          If you need to ask a question about installing solar panels, your
+          current solar system, or if you have an enquiry about an existing
+          quote or an installation you are waiting on, call us direct on
+          0143289950 or leave us a request below. One of our team will get in
+          touch with you as soon as possible.
+        </p>
+      </div>
+
+      <button id="getInTouchBtn" onclick="showForm();">Get in touch</button>
+
+      <div id="formContainer">
+        <form action="" method="post" id="contactForm" name="callBackForm" onsubmit="submitted();">
+          <label for="fname"> <b>First Name*</b> </label><br />
+          <input
+            type="text" id="fname" name="fname" placeholder="Ex: James" required/><br />
+          <label for="lname"> <b> Last Name</b></label
+          ><br />
+          <input type="text" id="lname" name="lname" /><br />
+          <label for="phone"> <b>Phone*</b></label
+          ><br />
+          <input type="number" id="pnumber" name="phone" required/> <br />
+          <label for="email"> <b>Email</b> </label> <br />
+          <input
+            type="email" id="email" name="email" placeholder="Ex: lionelmessi@gmail.com" /> <br />
+          <input
+            type="checkbox"
+            id="customerType"
+            name="existingCustomer"
+            value="existing customer"
+          />
+          <label for="existingCustomer"> <b>Existing Customer </b> </label
+          ><br />
+          <br />
+
+          <b> Type of Enquiry</b> <br />
+          <input
+            type="checkbox"
+            id="cEnquiry"
+            name="cEnquiry"
+            value="commercial Enquiry"
+          />
+          <label for="cEnquiry">Commercial Enqiury</label>
+          <input
+            type="checkbox"
+            id="rEnquiry"
+            name="rEnquiry"
+            value="residentoal Enquiry"
+          />
+          <label for="rEnquiry"> Residential Enquiry</label>
+          <input type="checkbox" id="others" name="others" value="others" />
+          <label for="others"> Others</label> <br />
+          <br />
+          <textarea id="w3mission" rows="4" cols="50">
+            Leave A Message ......
+           </textarea
+          >
+          <br />
+          <input type="button" value="Reset Form" onclick="resetForm();" />
+          <input type="submit" value="Submit" id="submitBtn" />
+        </form>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="row">
+        <div class="column">
+          <h4>Location</h4>
+          <p>78 Queens Road</p>
+          <p>Southend-On-Sea</p>
+          <p>Essex SS9 6PT</p>
+        </div>
+
+        <div class="column">
+          <p>Copyright © 2020 solarenergy, Inc.</p>
+          <br />
+          <h4 style="padding-left: 40px;">Social Media</h4>
+          <a href="">
+            <i
+              class="fab fa-instagram"
+              style="font-size: 35px; padding-left: 10px;"
+            ></i
+          ></a>
+          <a href=""
+            ><i
+              class="fab fa-facebook-square"
+              style="font-size: 35px; padding-left: 10px;"
+            ></i
+          ></a>
+          <a href=""
+            ><i
+              class="fab fa-linkedin"
+              style="font-size: 35px; padding-left: 10px;"
+            ></i
+          ></a>
+          <a href=""
+            ><i
+              class="fab fa-twitter-square"
+              style="font-size: 35px; padding-left: 10px;"
+            ></i
+          ></a>
+          <br />
+        </div>
+
+        <div class="column">
+          <h4>Contacts</h4>
+          <p>Phone: (+44) 1754678599</p>
+          <p>Fax: (+44) 1754678000</p>
+          <p>Email: solarenergy@outlook.com</p>
+          <p><a href="">Contact Us</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
